@@ -2,7 +2,7 @@
 
 [![Paper](https://img.shields.io/badge/Paper-PDF-blue)](./PFM___Articulo-5.pdf)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
-[![Framework: SimplyQRL](https://img.shields.io/badge/Framework-SimplyQRL-lightgrey)](https://github.com/javierlazaro/SimplyQRL)
+[![Framework: SimplyQRL](https://img.shields.io/badge/Framework-SimplyQRL-lightgrey)](https://github.com/javier-lazaro/SimplyQRL)
 
 > Companion repository for the paper *An Ablation Study on Hybrid Quantum Reinforcement Learning* (Lazaro, 2025)
 
@@ -15,7 +15,7 @@ This repository contains the full experimental setup for the paper *An Ablation 
 - **Observation embedding** → Data Reuploading (DR)  
 - **Ansatz structure** → Entanglement ablations
 
-All experiments are implemented using [SimplyQRL](https://github.com/javierlazaro/SimplyQRL), ensuring consistent PPO training across classical, quantum, and hybrid agents.
+All experiments are implemented using [SimplyQRL](https://github.com/javier-lazaro/SimplyQRL), ensuring consistent PPO training across classical, quantum, and hybrid agents.
 
 ---
 
