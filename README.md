@@ -1,4 +1,4 @@
-# 🧠 Ablation on Hybrid Quantum Reinforcement Learning
+# 🧠 Ablation on Hybrid QRL
 
 [![Paper](https://img.shields.io/badge/Paper-PDF-blue)](./PFM___Articulo-5.pdf)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
