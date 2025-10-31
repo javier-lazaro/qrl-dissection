@@ -4,8 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![Framework: SimplyQRL](https://img.shields.io/badge/Framework-SimplyQRL-lightgrey)](https://github.com/javier-lazaro/SimplyQRL)
 
-> Companion repository for the paper *An Ablation Study on Hybrid Quantum Reinforcement Learning* (Lazaro, 2025)
-
+> Companion repository for the paper *Dissecting Quantum Reinforcement Learning: A Systematic Evaluation of Key Components* (Lazaro et. al., 2025)
 ---
 
 ## 📘 Overview
@@ -58,7 +57,7 @@ If you use this repository or its results, please cite:
 ```bibtex
 @misc{
   author = {Javier Lázaro},
-  title  = {An Ablation Study on Hybrid Quantum Reinforcement Learning},
+  title  = {Dissecting Quantum Reinforcement Learning: A Systematic Evaluation of Key Components},
   year   = {2025},
   institution = {University of Deusto},
 }
