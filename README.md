@@ -83,4 +83,4 @@ and the associated framework:
 
 ---
 
-**License:** MIT © 2025 Javier Lázaro
+**License:** MIT © 2025 Javier Lázaro González
