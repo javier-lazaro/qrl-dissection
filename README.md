@@ -8,13 +8,17 @@
 ---
 
 ## 📘 Overview
-This repository contains the full experimental setup for the paper *Dissecting Quantum Reinforcement Learning: A Systematic Evaluation of Key Components* (University of Deusto, 2025). It implements a systematic, component-wise evaluation of hybrid QRL pipelines under a unified PPO–CartPole framework:
+This repository contains the full experimental setup for the paper *Dissecting Quantum Reinforcement Learning: A Systematic Evaluation of Key Components* (Lazaro *et al.*, 2025).  
 
-- **Post-PQC inference**     → Effect of Output Reuse (OR) in PQC-based and classical agents 
-- **Observation embedding**  → Comparison of angle-embedding philosophies using Data Reuploading (DR)  
-- **Ansatz structure**       → Entanglement ablations on initially entangled and unentangled ansätze
+It implements a systematic, component-wise evaluation of hybrid QRL pipelines under a unified PPO–CartPole framework:
 
-All experiments are implemented using [SimplyQRL](https://github.com/javier-lazaro/SimplyQRL), ensuring consistent PPO training across classical, quantum, and hybrid agents.
+- **Post-PQC inference** → Analysis of Output Reuse (OR) in PQC-based and classical agents  
+- **Observation embedding** → Comparison of angle-embedding philosophies using Data Reuploading (DR)  
+- **Ansatz structure** → Entanglement ablations on initially entangled and unentangled ansätze  
+
+All experiments are implemented using [SimplyQRL](https://github.com/javierlazaro9/SimplyQRL), a modular benchmarking framework for hybrid quantum reinforcement learning.  
+
+For reproducibility, this repository includes a self-contained copy of the SimplyQRL library (see `src/simplyqrl/`), allowing all experiments to be executed out of the box without external dependencies on the upstream version.
 
 ---
 
