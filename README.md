@@ -1,10 +1,10 @@
-# 🧠 Ablation on Hybrid QRL
+# 🧠 Dissecting QRL
 
 [![Paper](https://img.shields.io/badge/Paper-PDF-blue)](./PFM___Articulo-5.pdf)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![Framework: SimplyQRL](https://img.shields.io/badge/Framework-SimplyQRL-lightgrey)](https://github.com/javier-lazaro/SimplyQRL)
 
-> Companion repository for the paper *Dissecting Quantum Reinforcement Learning: A Systematic Evaluation of Key Components* (Lazaro et. al., 2025)
+> Companion repository for the paper *Dissecting Quantum Reinforcement Learning: A Systematic Evaluation of Key Components* (Lazaro *et al.*, 2025)
 ---
 
 ## 📘 Overview
