@@ -8,11 +8,11 @@
 ---
 
 ## 📘 Overview
-This repository contains the full experimental setup for the paper *An Ablation Study on Hybrid Quantum Reinforcement Learning* (University of Deusto, 2025). It implements a systematic ablation of hybrid QRL pipelines under a unified PPO–CartPole framework:
+This repository contains the full experimental setup for the paper *Dissecting Quantum Reinforcement Learning: A Systematic Evaluation of Key Components* (University of Deusto, 2025). It implements a systematic, component-wise evaluation of hybrid QRL pipelines under a unified PPO–CartPole framework:
 
-- **Post-PQC inference** → Output Reuse (OR)  
-- **Observation embedding** → Data Reuploading (DR)  
-- **Ansatz structure** → Entanglement ablations
+- **Post-PQC inference**     → Effect of Output Reuse (OR) in PQC-based and classical agents 
+- **Observation embedding**  → Comparison of angle-embedding philosophies using Data Reuploading (DR)  
+- **Ansatz structure**       → Entanglement ablations on initially entangled and unentangled ansätze
 
 All experiments are implemented using [SimplyQRL](https://github.com/javier-lazaro/SimplyQRL), ensuring consistent PPO training across classical, quantum, and hybrid agents.
 
@@ -20,8 +20,8 @@ All experiments are implemented using [SimplyQRL](https://github.com/javier-laza
 
 ## ⚙️ Installation
 ```bash
-git clone https://github.com/javierlazaro/Ablation-on-hybrid-QRL.git
-cd Ablation-on-hybrid-QRL
+git clone https://github.com/javier-lazaro/qrl-dissection.git
+cd qrl-dissection
 poetry install
 ```
 Or use `pip install -r requirements.txt`.
@@ -36,8 +36,8 @@ Each script in `src/experiments/` corresponds to a paper section:
 | Section | Experiment | Script |
 |----------|-------------|---------|
 | 4.1 | Post-PQC inference | `post-pqc-inference.py` |
-| 4.2 | Observaton embeddings | `pcq-embeddings.py` |
-| 4.3 | Ansatz entanglement | `pqc-entanglement.py` |
+| 4.2 | Observaton embedding | `pcq-embeddings.py` |
+| 4.3 | Ansatz structure | `pqc-entanglement.py` |
 
 Example:
 ```bash
