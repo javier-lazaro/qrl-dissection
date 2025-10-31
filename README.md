@@ -35,9 +35,9 @@ Each script in `src/experiments/` corresponds to a paper section:
 
 | Section | Experiment | Script |
 |----------|-------------|---------|
-| 4.1 | Output Reuse (OR) | `post-pqc-inference.py` |
-| 4.2 | Data Reuploading (DR) | `pcq-embeddings.py` |
-| 4.3 | Entanglement Ablation | `pqc-entanglement.py` |
+| 4.1 | Post-PQC inference | `post-pqc-inference.py` |
+| 4.2 | Observaton embeddings | `pcq-embeddings.py` |
+| 4.3 | Ansatz entanglement | `pqc-entanglement.py` |
 
 Example:
 ```bash
