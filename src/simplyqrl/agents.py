@@ -55,19 +55,29 @@ def build_agent(type, obs_shape, n_actions, config, is_qnet=False):
             obs_dim = int(np.prod(obs_shape))
             return HybridAgent(obs_dim, n_actions, config, is_qnet)
 
+        else:
+            raise ValueError(
+                f"Unsupported agent type '{type}'. Expected 'mlp' or 'hybrid'."
+            )
+
 
 class OutputReuse(nn.Module):
     def __init__(self, n_repeats: int):
         """
+        Output Reuse repeats the complete feature vector along the feature
+        dimension. For input shape ``[batch_size, n_features]`` and factor R,
+        the output shape is ``[batch_size, n_features * R]``. Equivalently,
+        every input feature appears R times in the resulting vector.
+
         Args:
-            n_repeats (int): How many times to repeat the quantum layer's output.
+            n_repeats (int): Output Reuse factor R.
         """
         super(OutputReuse, self).__init__()
         self.n_repeats = n_repeats
 
     def forward(self, x):
-        # x is assumed to be of shape [batch_size, n_qubits]
-        # This repeats the features along the feature dimension.
+        # x is assumed to be [batch_size, n_features]. ``repeat`` replicates
+        # the complete feature vector R times along the feature dimension.
         return x.repeat(1, self.n_repeats)
 
 
@@ -244,7 +254,7 @@ class HybridAgent(nn.Module):
                   - "circ_type": specific quantum circuit type: "hsiao", "skolik" or "custom"
                   - "n_qubits": how many qubits for the quantum circuit
                   - "n_layers": how many layers in the quantum circuit
-                  - "reuse_repetitions": how many times we wish to reuse the output of the quantum circuit
+                  - "reuse_repetitions": OR factor R; repeats the full n_qubits output vector R times
                   - "embedding": type of embedding to apply to the circuit (will be ignored for non custom circuits)
                   - "embedding_kwargs": additional arguments for the embedding (will be ignored for non custom circuits)
                   - "emb_indices": indices in the obs Tensor to apply the embeddding. 

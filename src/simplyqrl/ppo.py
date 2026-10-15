@@ -57,7 +57,7 @@ class PPO:
         anneal_lr=True,
         gamma=0.99,
         gae_lambda=0.95,
-        num_minibatches=4,
+        num_minibatches=4,  # Generic library default; paper runners explicitly use 16.
         update_epochs=4,
         norm_adv=True,
         clip_coef=0.2,
